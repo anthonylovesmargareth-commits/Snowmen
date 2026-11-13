@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowmen Flexbox Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-layout">
+    <header class="intro panel">
+      <p class="eyebrow">Basic Web Design · Module 4</p>
+      <h1>Flexbox &amp; CSS Grid Puzzle</h1>
+      <p class="student">Anthony John Tantamco</p>
+      <p class="description">A winter picture puzzle assembled with Flexbox and organized with CSS Grid.</p>
+    </header>
+
+    <section class="puzzle-section panel" aria-labelledby="puzzle-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected puzzle</p>
+          <h2 id="puzzle-title">Snowmen</h2>
+        </div>
+        <span class="snowflake" aria-hidden="true">❄</span>
+      </div>
+
+      <!-- Flexbox places each 150 × 133 image tile in the correct position. -->
+      <div class="puzzle-frame">
+        <div class="puzzle-container" aria-label="Completed snowmen picture puzzle">
+          <img src="images/puzzle2_K.jpg" alt="Puzzle piece 1">
+          <img src="images/puzzle2_M.jpg" alt="Puzzle piece 2">
+          <img src="images/puzzle2_E.jpg" alt="Puzzle piece 3">
+          <img src="images/puzzle2_G.jpg" alt="Puzzle piece 4">
+          <img src="images/puzzle2_A.jpg" alt="Puzzle piece 5">
+          <img src="images/puzzle2_D.jpg" alt="Puzzle piece 6">
+          <img src="images/puzzle2_L.jpg" alt="Puzzle piece 7">
+          <img src="images/puzzle2_B.jpg" alt="Puzzle piece 8">
+          <img src="images/puzzle2_F.jpg" alt="Puzzle piece 9">
+          <img src="images/puzzle2_J.jpg" alt="Puzzle piece 10">
+          <img src="images/puzzle2_H.jpg" alt="Puzzle piece 11">
+          <img src="images/puzzle2_I.jpg" alt="Puzzle piece 12">
+
+          <!-- This extra puzzle piece is included but hidden as required. -->
+          <img class="incorrect-piece" src="images/puzzle2_C.jpg" alt="Extra puzzle piece">
+        </div>
+      </div>
+      <p class="caption">The picture is assembled using a Flexbox container with wrapped image tiles.</p>
+    </section>
+
+    <footer class="date-section panel">
+      <div>
+        <p class="eyebrow">Assignment completed</p>
+        <h2>November 12, 2026</h2>
+      </div>
+      <span class="date-icon" aria-hidden="true">☃</span>
+    </footer>
+  </main>
+</body>
+</html>
